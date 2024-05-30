@@ -2,32 +2,195 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VITE APP / SCSS / GSAP / TAILWIND</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VITE APP / SCSS / GSAP / TAILWIND</title>
 </head>
 
 <body>
-  <div class="relative w-full h-screen overflow-hidden" id="app">
-    <div class="absolute top-0 w-full flex items-center justify-between py-2 px-6 bg-black text-white font-semibold">
-      <a class="underline underline-offset-2" href="https://x.com/ln_dev7">
-        Code by LN
-      </a>
-      <a class="underline underline-offset-2" href="https://github.com/ln-dev7/Recipe-Smooth-Carousel-Animation">
-        GitHub
-      </a>
-      <a class="underline underline-offset-2" href="https://www.figma.com/design/AJtffGTgXmt58St5i90IKY/Recipe-Smooth-Carousel-Animation-(Community)?node-id=0-1&t=RBOdonBQOMK1eINd-1">
-        Figma
-      </a>
+    <div class="relative w-full h-screen overflow-hidden" id="app">
+        <div
+            class="absolute top-0 w-full flex items-center justify-between py-2 px-6 bg-transparent text-white font-semibold z-10">
+            <a class="underline underline-offset-2" href="https://x.com/ln_dev7">
+                Code by LN
+            </a>
+            <a class="underline underline-offset-2" href="https://github.com/ln-dev7/Recipe-Smooth-Carousel-Animation">
+                GitHub
+            </a>
+            <a class="underline underline-offset-2"
+                href="https://www.figma.com/design/AJtffGTgXmt58St5i90IKY/Recipe-Smooth-Carousel-Animation-(Community)?node-id=0-1&t=RBOdonBQOMK1eINd-1">
+                Figma
+            </a>
+        </div>
+        <div class="absolute w-full h-full bg-black/80 z-[2]"></div>
+        <div class="absolute w-full h-full flex flex-col items-center justify-start">
+            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJlYWtmYXN0fGVufDB8fDB8fHww"
+                class="background w-full h-full object-cover bg-slate-200" alt="bg" />
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGVzc2VydHxlbnwwfHwwfHx8MA%3D%3D"
+                class="background w-full h-full object-cover bg-slate-200" alt="bg" />
+            <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGp1aWNlfGVufDB8fDB8fHww"
+                class="background w-full h-full object-cover bg-slate-200" alt="bg" />
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBhc3RhfGVufDB8fDB8fHww"
+                class="background w-full h-full object-cover bg-slate-200" alt="bg" />
+            <img src="https://images.unsplash.com/photo-1606850780554-b55ea4dd0b70?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2VhJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D"
+                class="background w-full h-full object-cover bg-slate-200" alt="bg" />
+        </div>
+        <div class="w-full h-full flex flex-col items-center justify-center z-[3]">
+            <div class="w-full flex items-center justify-center z-[3]">
+                <h2
+                    class="bebas-neue uppercase title text-6xl text-center shrink-0 w-1/5 h-[140px] flex items-center justify-center">
+                    Breakfast</h2>
+                <h2
+                    class="bebas-neue uppercase title text-6xl opacity-30 text-center shrink-0 w-1/5 h-[140px] flex items-center justify-center">
+                    Dessert</h2>
+                <h2
+                    class="bebas-neue uppercase title text-6xl opacity-30 text-center shrink-0 w-1/5 h-[140px] flex items-center justify-center">
+                    Juice</h2>
+                <h2
+                    class="bebas-neue uppercase title text-6xl opacity-30 text-center shrink-0 w-1/5 h-[140px] flex items-center justify-center">
+                    Pasta</h2>
+                <h2
+                    class="bebas-neue uppercase title text-6xl opacity-30 text-center shrink-0 w-1/5 h-[140px] flex items-center justify-center">
+                    Sea Food</h2>
+            </div>
+            <div class="w-full bg-transparent border-b-[2px] border-dashed z-[3] relative">
+                <div
+                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex items-center justify-center">
+                    <div class="w-1/5 flex items-center justify-center dot">
+                        <div class="w-5 h-5 bg-white rounded-full"></div>
+                    </div>
+                    <div class="w-1/5 flex items-center justify-center dot scale-0">
+                        <div class="w-5 h-5 bg-white rounded-full"></div>
+                    </div>
+                    <div class="w-1/5 flex items-center justify-center dot scale-0">
+                        <div class="w-5 h-5 bg-white rounded-full"></div>
+                    </div>
+                    <div class="w-1/5 flex items-center justify-center dot scale-0">
+                        <div class="w-5 h-5 bg-white rounded-full"></div>
+                    </div>
+                    <div class="w-1/5 flex items-center justify-center dot scale-0">
+                        <div class="w-5 h-5 bg-white rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+            <section id="splide1" class="splide flex items-center w-[1136px] z-[3] mb-6 mt-10">
+                <div class="splide__track w-full">
+                    <ul class="splide__list">
+                        <li class="splide__slide rounded-2xl overflow-hidden">
+                            <img src="https://plus.unsplash.com/premium_photo-1672363353897-ae5a81a1ab57?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YnJlYWtmYXN0fGVufDB8fDB8fHww"
+                                class="w-full h-full object-cover bg-slate-200" alt="image" />
+                        </li>
+                        <li class="splide__slide rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1538220856186-0be0e085984d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJyZWFrZmFzdHxlbnwwfHwwfHx8MA%3D%3D"
+                                class="w-full h-full object-cover bg-slate-200" alt="image" />
+                        </li>
+                        <li class="splide__slide rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1513442542250-854d436a73f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJyZWFrZmFzdHxlbnwwfHwwfHx8MA%3D%3D"
+                                class="w-full h-full object-cover bg-slate-200" alt="image" />
+                        </li>
+                        <li class="splide__slide rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1560180474-e8563fd75bab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRlc3NlcnR8ZW58MHx8MHx8fDA%3D"
+                                class="w-full h-full object-cover bg-slate-200" alt="image" />
+                        </li>
+                        <li class="splide__slide rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1541599188778-cdc73298e8fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRlc3NlcnR8ZW58MHx8MHx8fDA%3D"
+                                class="w-full h-full object-cover bg-slate-200" alt="image" />
+                        </li>
+                        <li class="splide__slide rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1508737804141-4c3b688e2546?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRlc3NlcnR8ZW58MHx8MHx8fDA%3D"
+                                class="w-full h-full object-cover bg-slate-200" alt="image" />
+                        </li>
+                        <li class="splide__slide rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHx8MHx8fDA%3D"
+                                class="w-full h-full object-cover bg-slate-200" alt="image" />
+                        </li>
+                        <li class="splide__slide rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8anVpY2V8ZW58MHx8MHx8fDA%3D"
+                                class="w-full h-full object-cover bg-slate-200" alt="image" />
+                        </li>
+                        <li class="splide__slide rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1618724980108-a4d3856fd8f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8anVpY2V8ZW58MHx8MHx8fDA%3D"
+                                class="w-full h-full object-cover bg-slate-200" alt="image" />
+                        </li>
+                        <li class="splide__slide rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1600803907087-f56d462fd26b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBhc3RhfGVufDB8fDB8fHww"
+                                class="w-full h-full object-cover bg-slate-200" alt="image" />
+                        </li>
+                        <li class="splide__slide rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBhc3RhfGVufDB8fDB8fHww"
+                                class="w-full h-full object-cover bg-slate-200" alt="image" />
+                        </li>
+                        <li class="splide__slide rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBhc3RhfGVufDB8fDB8fHww"
+                                class="w-full h-full object-cover bg-slate-200" alt="image" />
+                        </li>
+                        <li class="splide__slide rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1582993728648-1f29c748e5ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c2VhJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D"
+                                class="w-full h-full object-cover bg-slate-200" alt="image" />
+                        </li>
+                        <li class="splide__slide rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1601314002592-b8734bca6604?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNlYSUyMGZvb2R8ZW58MHx8MHx8fDA%3D"
+                                class="w-full h-full object-cover bg-slate-200" alt="image" />
+                        </li>
+                        <li class="splide__slide rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1618055301293-494ab4c71f9f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2VhJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D"
+                                class="w-full h-full object-cover bg-slate-200" alt="image" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="mx-auto flex flex-col justify-start items-center overflow-hidden z-[3] h-[244px]">
+                <div class="description flex flex-col items-start gap-4 w-[360px] p-4">
+                    <h3 class="uppercase text-4xl bebas-neue">Avocado Egg Toast</h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur. Bibendum nunc pellentesque in
+                        tincidunt tortor auctor
+                        tellus congue neque. Interdum donec sit egestas quam bibendum elementum</p>
+                    <a class="uppercase text-sm bebas-neue cursor-pointer underline underline-offset-2" href="#">See
+                        Receipe</a>
+                </div>
+                <div class="description flex flex-col items-start gap-4 w-[360px] p-4">
+                    <h3 class="uppercase text-4xl bebas-neue">
+                        Salmon Sashimi
+                    </h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur. Bibendum nunc pellentesque in
+                        tincidunt tortor auctor
+                        tellus congue neque. Interdum donec sit egestas quam bibendum elementum</p>
+                    <a class="uppercase text-sm bebas-neue cursor-pointer underline underline-offset-2" href="#">See
+                        Receipe</a>
+                </div>
+                <div class="description flex flex-col items-start gap-4 w-[360px] p-4">
+                    <h3 class="uppercase text-4xl bebas-neue">Cheescake</h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur. Bibendum nunc pellentesque in
+                        tincidunt tortor auctor
+                        tellus congue neque. Interdum donec sit egestas quam bibendum elementum</p>
+                    <a class="uppercase text-sm bebas-neue cursor-pointer underline underline-offset-2" href="#">See
+                        Receipe</a>
+                </div>
+                <div class="description flex flex-col items-start gap-4 w-[360px] p-4">
+                    <h3 class="uppercase cursor-pointer text-4xl bebas-neue">
+                        Chocolate Cake
+                    </h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur. Bibendum nunc pellentesque in
+                        tincidunt tortor auctor
+                        tellus congue neque. Interdum donec sit egestas quam bibendum elementum</p>
+                    <a class="uppercase text-sm bebas-neue cursor-pointer underline underline-offset-2" href="#">See
+                        Receipe</a>
+                </div>
+                <div class="description flex flex-col items-start gap-4 w-[360px] p-4">
+                    <h3 class="uppercase text-4xl bebas-neue">
+                        Fruit Salad
+                    </h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur. Bibendum nunc pellentesque in
+                        tincidunt tortor auctor
+                        tellus congue neque. Interdum donec sit egestas quam bibendum elementum</p>
+                    <a class="uppercase text-sm bebas-neue cursor-pointer underline underline-offset-2" href="#">See
+                        Receipe</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="w-full h-full flex items-center justify-center p-4">
-      <h1 className="text-3xl font-bold underline">
-        FUN ANIMATION TEMPLATE
-      </h1>
-    </div>
-  </div>
-  <script type="module" src="/main.js"></script>
+    <script type="module" src="/main.js"></script>
 </body>
 
 </html>
